@@ -12,6 +12,7 @@ nav{
 	height: 70px;
 	width: 100%;
 	text-align: left;
+	position: fixed;
 }
 
 .logo{
