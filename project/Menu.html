@@ -28,23 +28,45 @@
 
 		
 			<br><br><br><br><div class="menunav">
-			  	<button class="tablinks" onclick="openMenu(event, 'Rice')">Rice</button>
-  				<button class="tablinks"  id="defaultOpen" onclick="openMenu(event, 'Chicken')">Chicken</button>
+			  	<button class="tablinks" id="defaultOpen" onclick="openMenu(event, 'Rice')">Rice</button>
+  				<button class="tablinks" onclick="openMenu(event, 'Chicken')">Chicken</button>
  				<button class="tablinks" onclick="openMenu(event, 'Fish')">Fish</button>
  				<button class="tablinks" onclick="openMenu(event, 'Vegetable')">Vegetable</button>
  				<button class="tablinks" onclick="openMenu(event, 'Drinks')">Drinks</button>
  				<button class="tablinks" onclick="openMenu(event, 'Soup')">Soup</button>
 			</div>
 
+			<!-- Rice Menu -->
 			<div id="Rice" class="tabcontent">
-				  <h3>Rice</h3>
-				  <p>Rice is the capital city of England.</p>
+				  <br><br><br><br>
+				  <div class="container">
+				  		<image class="picSize" src="RicewhiteRice.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM1.00<br>Add to Cart</button>
+				  		<div class="description">
+ 							<p>White Rice</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="RiceBrownRice.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Cart</button>
+				  		<div class="description">
+ 							<p>Brown Rice</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="RiceBiryaniRice.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM2.00<br>Add to Cart</button>
+				  		<div class="description">
+ 							<p>Biryani Rice</p>
+  						</div>
+				  </div>
 			</div>
 
+			<!-- Chicken Menu -->
 			<div id="Chicken" class="tabcontent">
-				  <br><br><br><br>
-				  
-				  	
+				  <br><br><br><br>		  	
 				  <div class="container">
 				  		<image class="picSize" src="ChickenFried.jpg"></image>
 				  		<button class="btn" onclick="cartAdded()">+RM2.50<br>Add to Cart</button>
@@ -56,7 +78,7 @@
 
 				  <div class="container">
 				  		<image class="picSize" src="ChickenSteamed.jpg"></image>
-				  		<button class="btn">+RM2.00<br>Add to Cart</button>
+				  		<button class="btn" onclick="cartAdded()">+RM2.00<br>Add to Cart</button>
 				  		<div class="description">
  							<p>Steamed</p>
   						</div>
@@ -64,7 +86,7 @@
 
 				  <div class="container">
 				  		<image class="picSize" src="ChickenCurry.jpg"></image>
-				  		<button class="btn">+RM2.00<br>Add to Cart</button>
+				  		<button class="btn" onclick="cartAdded()">+RM2.00<br>Add to Cart</button>
 				  		<div class="description">
  							<p>Curry</p>
   						</div>
@@ -72,7 +94,7 @@
 
 				  <div class="container">
 				  		<image class="picSize" src="ChickenRoast.jpg"></image>
-				  		<button class="btn">+RM2.00<br>Add to Cart</button>
+				  		<button class="btn" onclick="cartAdded()">+RM2.00<br>Add to Cart</button>
 				  		<div class="description">
  							<p>Roasted</p>
   						</div>
@@ -80,7 +102,7 @@
 
 				  <div class="container">
 				  		<image class="picSize" src="ChickenSweet&Sour.jpg"></image>
-				  		<button class="btn">+RM2.00<br>Add to Cart</button>
+				  		<button class="btn" onclick="cartAdded()">+RM2.00<br>Add to Cart</button>
 				  		<div class="description">
  							<p>Sweet & Sour</p>
   						</div>
@@ -88,7 +110,7 @@
 
 				  <div class="container">
 				  		<image class="picSize" src="ChickenKungPao.jpg"></image>
-				  		<button class="btn">+RM2.00<br>Add to Cart</button>
+				  		<button class="btn" onclick="cartAdded()">+RM2.00<br>Add to Cart</button>
 				  		<div class="description">
  							<p>Kung Pao</p>
   						</div>
@@ -96,7 +118,7 @@
 
 				  <div class="container">
 				  		<image class="picSize" src="ChickenMarmite.jpg"></image>
-				  		<button class="btn">+RM2.00<br>Add to Cart</button>
+				  		<button class="btn" onclick="cartAdded()">+RM2.00<br>Add to Cart</button>
 				  		<div class="description">
  							<p>Marmite</p>
   						</div>
@@ -104,40 +126,163 @@
 
 				  <div class="container">
 				  		<image class="picSize" src="ChickenCreamyButter.jpg"></image>
-				  		<button class="btn">+RM2.00<br>Add to Cart</button>
+				  		<button class="btn" onclick="cartAdded()">+RM2.00<br>Add to Cart</button>
 				  		<div class="description">
  							<p>Creamy Butter</p>
   						</div>
 				  </div>
-
-
-
-
-
 			</div>
 
+			<!-- Fish Menu -->
 			<div id="Fish" class="tabcontent">
-				  <h3>Fish</h3>
-				  <p>Fish is the capital of Japan.</p>
+				  <br><br><br><br>
+				  <div class="container">
+				  		<image class="picSize" src="FishFried.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM2.50<br>Add to Cart</button>
+				  		<div class="description">
+ 							<p>Fried</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="FishCurry.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM2.50<br>Add to Cart</button>
+				  		<div class="description">
+ 							<p>Curry</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="FishSteamed.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM2.50<br>Add to Cart</button>
+				  		<div class="description">
+ 							<p>Steamed</p>
+  						</div>
+				  </div>
+
 			</div>
 
+
+			<!-- Vegetable Menu -->
 			<div id="Vegetable" class="tabcontent">
-				  <h3>Vegetable</h3>
-				  <p>Kuala Lumpur is the capital of Malaysia.</p>
+				  <br><br><br><br>
+				  <div class="container">
+				  		<image class="picSize" src="VegetableCauliflower.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Cart</button>
+				  		<div class="description">
+ 							<p>Cauliflower</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="VegetableBroccoli.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Cart</button>
+				  		<div class="description">
+ 							<p>Broccoli</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="VegetableKaiLan.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Cart</button>
+				  		<div class="description">
+ 							<p>Kai Lan</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="VegetableChoySum.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Cart</button>
+				  		<div class="description">
+ 							<p>Choy Sum</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="VegetableCabbage.jpeg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Cart</button>
+				  		<div class="description">
+ 							<p>Cabbage</p>
+  						</div>
+				  </div>
+
+				 <div class="container">
+				  		<image class="picSize" src="VegetableWongBok.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Cart</button>
+				  		<div class="description">
+ 							<p>Wong Bok</p>
+  						</div>
+				  </div>
 			</div>
 
+
+			<!-- Drinks Menu -->
 			<div id="Drinks" class="tabcontent">
-				  <h3>Drinks</h3>
-				  <p>Kuala Lumpur is the capital of Malaysia.</p>
+				  <br><br><br><br>
+				  <div class="container">
+				  		<image class="picSize" src="DrinkCoke.png"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM2.50<br>Add to Cart</button>
+				  		<div class="description">
+ 							<p>Coke</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="DrinkSprite.png"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM2.50<br>Add to Cart</button>
+				  		<div class="description">
+ 							<p>Sprite</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="Drink100plus.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM2.50<br>Add to Cart</button>
+				  		<div class="description">
+ 							<p>100 plus</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="Drink7up.png"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM2.50<br>Add to Cart</button>
+				  		<div class="description">
+ 							<p>7 Up</p>
+  						</div>
+				  </div>
+
+				  
+				  
 			</div>
 
+			<!-- Soup Menu -->
 			<div id="Soup" class="tabcontent">
-				  <h3>Soup</h3>
-				  <p>Kuala Lumpur is the capital of Malaysia.</p>
+				  <br><br><br><br>
+				  <div class="container">
+				  		<image class="picSize" src="SoupABC.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Cart</button>
+				  		<div class="description">
+ 							<p>ABC</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="SoupChicken.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Cart</button>
+				  		<div class="description">
+ 							<p>Chicken Soup</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="SoupMushroom.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Cart</button>
+				  		<div class="description">
+ 							<p>Mushroom Soup</p>
+  						</div>
+				  </div>
+
 			</div>
-
-
-
 
 
 			<script>
@@ -155,14 +300,14 @@
 					  evt.currentTarget.className += " active";
 					}
 
-					document.getElementById("defaultOpen").click();	
+					document.getElementById("defaultOpen").click();
 			</script>
+
 			<script>
 				function cartAdded(){
 				document.getElementById("cart").src="cartwithreddot.png";
 				}
 			</script>
-
 
 </body>
 </html>
