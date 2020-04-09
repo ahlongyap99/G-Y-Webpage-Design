@@ -15,7 +15,7 @@
 				<li><a href="#" class="headerbutton">&ensp;About&ensp;</a></li>
 				<li><a href="#" class="headerbutton">&ensp;Menu&ensp;</a></li>
 				<li><a href="#" class="headerbutton">&ensp;Location&ensp;</a></li>
-				<li><a href="#" class="headercart"><image height = "30" src = "cart.png"></image> </a></li>
+				<li><a href="#" class="headercart"><image id ="cart" height = "30" src = "cart.png"></image> </a></li>
 				<li class="dropdown"><a href="#" class="headerprofile"><image height ="40" src = "ppic.png"></image></a>
 					<div class="dropdown-content">
 						<a href="#">Profile</a>
@@ -47,7 +47,7 @@
 				  	
 				  <div class="container">
 				  		<image class="picSize" src="ChickenFried.jpg"></image>
-				  		<button class="btn">+RM2.50<br>Add to Cart</button>
+				  		<button class="btn" onclick="cartAdded()">+RM2.50<br>Add to Cart</button>
 				  		<div class="description">
  							<p>Fried</p>
   						</div>
@@ -155,7 +155,12 @@
 					  evt.currentTarget.className += " active";
 					}
 
-					document.getElementById("defaultOpen").click();
+					document.getElementById("defaultOpen").click();	
+			</script>
+			<script>
+				function cartAdded(){
+				document.getElementById("cart").src="cartwithreddot.png";
+				}
 			</script>
 
 
