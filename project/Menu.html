@@ -29,7 +29,7 @@
 		
 			<br><br><br><br><div class="menunav">
 			  	<button class="tablinks" onclick="openMenu(event, 'Rice')">Rice</button>
-  				<button class="tablinks" onclick="openMenu(event, 'Chicken')">Chicken</button>
+  				<button class="tablinks"  id="defaultOpen" onclick="openMenu(event, 'Chicken')">Chicken</button>
  				<button class="tablinks" onclick="openMenu(event, 'Fish')">Fish</button>
  				<button class="tablinks" onclick="openMenu(event, 'Vegetable')">Vegetable</button>
  				<button class="tablinks" onclick="openMenu(event, 'Drinks')">Drinks</button>
@@ -42,28 +42,74 @@
 			</div>
 
 			<div id="Chicken" class="tabcontent">
-				  <h3>Chicken</h3><br>
+				  <br><br><br><br>
 				  
 				  	
 				  <div class="container">
 				  		<image class="picSize" src="ChickenFried.jpg"></image>
-				  		<button class="btn">Button</button>
+				  		<button class="btn">+RM2.50<br>Add to Cart</button>
+				  		<div class="description">
+ 							<p>Fried</p>
+  						</div>
+
 				  </div>
 
 				  <div class="container">
 				  		<image class="picSize" src="ChickenSteamed.jpg"></image>
-				  		<button class="btn">Button</button>
+				  		<button class="btn">+RM2.00<br>Add to Cart</button>
+				  		<div class="description">
+ 							<p>Steamed</p>
+  						</div>
 				  </div>
 
 				  <div class="container">
 				  		<image class="picSize" src="ChickenCurry.jpg"></image>
-				  		<button class="btn">Button</button>
+				  		<button class="btn">+RM2.00<br>Add to Cart</button>
+				  		<div class="description">
+ 							<p>Curry</p>
+  						</div>
 				  </div>
 
 				  <div class="container">
-				  		<image class="picSize" src="Promo1.png"></image>
-				  		<button class="btn">Button</button>
+				  		<image class="picSize" src="ChickenRoast.jpg"></image>
+				  		<button class="btn">+RM2.00<br>Add to Cart</button>
+				  		<div class="description">
+ 							<p>Roasted</p>
+  						</div>
 				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="ChickenSweet&Sour.jpg"></image>
+				  		<button class="btn">+RM2.00<br>Add to Cart</button>
+				  		<div class="description">
+ 							<p>Sweet & Sour</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="ChickenKungPao.jpg"></image>
+				  		<button class="btn">+RM2.00<br>Add to Cart</button>
+				  		<div class="description">
+ 							<p>Kung Pao</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="ChickenMarmite.jpg"></image>
+				  		<button class="btn">+RM2.00<br>Add to Cart</button>
+				  		<div class="description">
+ 							<p>Marmite</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="ChickenCreamyButter.jpg"></image>
+				  		<button class="btn">+RM2.00<br>Add to Cart</button>
+				  		<div class="description">
+ 							<p>Creamy Butter</p>
+  						</div>
+				  </div>
+
 
 
 
@@ -108,6 +154,8 @@
 					  document.getElementById(menuName).style.display = "block";
 					  evt.currentTarget.className += " active";
 					}
+
+					document.getElementById("defaultOpen").click();
 			</script>
 
 
