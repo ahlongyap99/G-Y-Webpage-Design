@@ -26,8 +26,37 @@
 		</nav>
 	</header>
 
-		
-			<br><br><br><br><div class="menunav">
+			<br><br><br><br>
+			<div class="btn-group" id="lunchbox">
+			  <button id="boxbtn1" class="box active">Lunch Box 1</button>
+			  <button id="boxbtn2" class="box">Lunch Box 2</button>
+			  <button id="boxbtn3" class="box">Lunch Box 3</button>
+			  <button>+ Add</button>
+			  <button id="checkoutbtn">View Cart</button>
+			</div>
+
+			<div id="box1" class="modal">
+				  	<div class="modal-content">
+				    	<span class="close">&times;</span>
+				    	<p>Some text in the Modal..</p>
+			  		</div>
+			</div>
+
+			<div id="box2" class="modal">
+				  	<div class="modal-content">
+				    	<span class="close">&times;</span>
+				    	<p>Some text in the Modal..</p>
+			  		</div>
+			</div>
+
+			<div id="box3" class="modal">
+				  	<div class="modal-content">
+				    	<span class="close">&times;</span>
+				    	<p>Some text in the Modal..</p>
+			  		</div>
+			</div>
+
+			<div class="menunav">
 			  	<button class="tablinks" id="defaultOpen" onclick="openMenu(event, 'Rice')">Rice</button>
   				<button class="tablinks" onclick="openMenu(event, 'Chicken')">Chicken</button>
  				<button class="tablinks" onclick="openMenu(event, 'Fish')">Fish</button>
@@ -41,7 +70,7 @@
 				  <br><br><br><br>
 				  <div class="container">
 				  		<image class="picSize" src="RicewhiteRice.jpg"></image>
-				  		<button class="btn" onclick="cartAdded()">+RM1.00<br>Add to Cart</button>
+				  		<button class="btn" onclick="cartAdded()">+RM1.00<br>Add to Lunch Box</button>
 				  		<div class="description">
  							<p>White Rice</p>
   						</div>
@@ -49,7 +78,7 @@
 
 				  <div class="container">
 				  		<image class="picSize" src="RiceBrownRice.jpg"></image>
-				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Cart</button>
+				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Lunch Box</button>
 				  		<div class="description">
  							<p>Brown Rice</p>
   						</div>
@@ -57,7 +86,7 @@
 
 				  <div class="container">
 				  		<image class="picSize" src="RiceBiryaniRice.jpg"></image>
-				  		<button class="btn" onclick="cartAdded()">+RM2.00<br>Add to Cart</button>
+				  		<button class="btn" onclick="cartAdded()">+RM2.00<br>Add to Lunch Box</button>
 				  		<div class="description">
  							<p>Biryani Rice</p>
   						</div>
@@ -69,7 +98,7 @@
 				  <br><br><br><br>		  	
 				  <div class="container">
 				  		<image class="picSize" src="ChickenFried.jpg"></image>
-				  		<button class="btn" onclick="cartAdded()">+RM2.50<br>Add to Cart</button>
+				  		<button class="btn" onclick="cartAdded()">+RM2.50<br>Add to Lunch Box</button>
 				  		<div class="description">
  							<p>Fried</p>
   						</div>
@@ -78,7 +107,7 @@
 
 				  <div class="container">
 				  		<image class="picSize" src="ChickenSteamed.jpg"></image>
-				  		<button class="btn" onclick="cartAdded()">+RM2.00<br>Add to Cart</button>
+				  		<button class="btn" onclick="cartAdded()">+RM2.00<br>Add to Lunch Box</button>
 				  		<div class="description">
  							<p>Steamed</p>
   						</div>
@@ -86,7 +115,7 @@
 
 				  <div class="container">
 				  		<image class="picSize" src="ChickenCurry.jpg"></image>
-				  		<button class="btn" onclick="cartAdded()">+RM2.00<br>Add to Cart</button>
+				  		<button class="btn" onclick="cartAdded()">+RM2.00<br>Add to Lunch Box</button>
 				  		<div class="description">
  							<p>Curry</p>
   						</div>
@@ -94,7 +123,7 @@
 
 				  <div class="container">
 				  		<image class="picSize" src="ChickenRoast.jpg"></image>
-				  		<button class="btn" onclick="cartAdded()">+RM2.00<br>Add to Cart</button>
+				  		<button class="btn" onclick="cartAdded()">+RM2.00<br>Add to Lunch Box</button>
 				  		<div class="description">
  							<p>Roasted</p>
   						</div>
@@ -102,7 +131,7 @@
 
 				  <div class="container">
 				  		<image class="picSize" src="ChickenSweet&Sour.jpg"></image>
-				  		<button class="btn" onclick="cartAdded()">+RM2.00<br>Add to Cart</button>
+				  		<button class="btn" onclick="cartAdded()">+RM2.00<br>Add to Lunch Box</button>
 				  		<div class="description">
  							<p>Sweet & Sour</p>
   						</div>
@@ -110,7 +139,7 @@
 
 				  <div class="container">
 				  		<image class="picSize" src="ChickenKungPao.jpg"></image>
-				  		<button class="btn" onclick="cartAdded()">+RM2.00<br>Add to Cart</button>
+				  		<button class="btn" onclick="cartAdded()">+RM2.00<br>Add to Lunch Box</button>
 				  		<div class="description">
  							<p>Kung Pao</p>
   						</div>
@@ -118,7 +147,7 @@
 
 				  <div class="container">
 				  		<image class="picSize" src="ChickenMarmite.jpg"></image>
-				  		<button class="btn" onclick="cartAdded()">+RM2.00<br>Add to Cart</button>
+				  		<button class="btn" onclick="cartAdded()">+RM2.00<br>Add to Lunch Box</button>
 				  		<div class="description">
  							<p>Marmite</p>
   						</div>
@@ -126,7 +155,7 @@
 
 				  <div class="container">
 				  		<image class="picSize" src="ChickenCreamyButter.jpg"></image>
-				  		<button class="btn" onclick="cartAdded()">+RM2.00<br>Add to Cart</button>
+				  		<button class="btn" onclick="cartAdded()">+RM2.00<br>Add to Lunch Box</button>
 				  		<div class="description">
  							<p>Creamy Butter</p>
   						</div>
@@ -138,7 +167,7 @@
 				  <br><br><br><br>
 				  <div class="container">
 				  		<image class="picSize" src="FishFried.jpg"></image>
-				  		<button class="btn" onclick="cartAdded()">+RM2.50<br>Add to Cart</button>
+				  		<button class="btn" onclick="cartAdded()">+RM2.50<br>Add to Lunch Box</button>
 				  		<div class="description">
  							<p>Fried</p>
   						</div>
@@ -146,7 +175,7 @@
 
 				  <div class="container">
 				  		<image class="picSize" src="FishCurry.jpg"></image>
-				  		<button class="btn" onclick="cartAdded()">+RM2.50<br>Add to Cart</button>
+				  		<button class="btn" onclick="cartAdded()">+RM2.50<br>Add to Lunch Box</button>
 				  		<div class="description">
  							<p>Curry</p>
   						</div>
@@ -154,7 +183,7 @@
 
 				  <div class="container">
 				  		<image class="picSize" src="FishSteamed.jpg"></image>
-				  		<button class="btn" onclick="cartAdded()">+RM2.50<br>Add to Cart</button>
+				  		<button class="btn" onclick="cartAdded()">+RM2.50<br>Add to Lunch Box</button>
 				  		<div class="description">
  							<p>Steamed</p>
   						</div>
@@ -168,7 +197,7 @@
 				  <br><br><br><br>
 				  <div class="container">
 				  		<image class="picSize" src="VegetableCauliflower.jpg"></image>
-				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Cart</button>
+				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Lunch Box</button>
 				  		<div class="description">
  							<p>Cauliflower</p>
   						</div>
@@ -176,7 +205,7 @@
 
 				  <div class="container">
 				  		<image class="picSize" src="VegetableBroccoli.jpg"></image>
-				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Cart</button>
+				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Lunch Box</button>
 				  		<div class="description">
  							<p>Broccoli</p>
   						</div>
@@ -184,7 +213,7 @@
 
 				  <div class="container">
 				  		<image class="picSize" src="VegetableKaiLan.jpg"></image>
-				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Cart</button>
+				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Lunch Box</button>
 				  		<div class="description">
  							<p>Kai Lan</p>
   						</div>
@@ -192,7 +221,7 @@
 
 				  <div class="container">
 				  		<image class="picSize" src="VegetableChoySum.jpg"></image>
-				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Cart</button>
+				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Lunch Box</button>
 				  		<div class="description">
  							<p>Choy Sum</p>
   						</div>
@@ -200,7 +229,7 @@
 
 				  <div class="container">
 				  		<image class="picSize" src="VegetableCabbage.jpeg"></image>
-				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Cart</button>
+				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Lunch Box</button>
 				  		<div class="description">
  							<p>Cabbage</p>
   						</div>
@@ -208,7 +237,7 @@
 
 				 <div class="container">
 				  		<image class="picSize" src="VegetableWongBok.jpg"></image>
-				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Cart</button>
+				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Lunch Box</button>
 				  		<div class="description">
  							<p>Wong Bok</p>
   						</div>
@@ -221,7 +250,7 @@
 				  <br><br><br><br>
 				  <div class="container">
 				  		<image class="picSize" src="DrinkCoke.png"></image>
-				  		<button class="btn" onclick="cartAdded()">+RM2.50<br>Add to Cart</button>
+				  		<button class="btn" onclick="cartAdded()">+RM2.50<br>Add to Lunch Box</button>
 				  		<div class="description">
  							<p>Coke</p>
   						</div>
@@ -229,7 +258,7 @@
 
 				  <div class="container">
 				  		<image class="picSize" src="DrinkSprite.png"></image>
-				  		<button class="btn" onclick="cartAdded()">+RM2.50<br>Add to Cart</button>
+				  		<button class="btn" onclick="cartAdded()">+RM2.50<br>Add to Lunch Box</button>
 				  		<div class="description">
  							<p>Sprite</p>
   						</div>
@@ -237,7 +266,7 @@
 
 				  <div class="container">
 				  		<image class="picSize" src="Drink100plus.jpg"></image>
-				  		<button class="btn" onclick="cartAdded()">+RM2.50<br>Add to Cart</button>
+				  		<button class="btn" onclick="cartAdded()">+RM2.50<br>Add to Lunch Box</button>
 				  		<div class="description">
  							<p>100 plus</p>
   						</div>
@@ -245,7 +274,7 @@
 
 				  <div class="container">
 				  		<image class="picSize" src="Drink7up.png"></image>
-				  		<button class="btn" onclick="cartAdded()">+RM2.50<br>Add to Cart</button>
+				  		<button class="btn" onclick="cartAdded()">+RM2.50<br>Add to Lunch Box</button>
 				  		<div class="description">
  							<p>7 Up</p>
   						</div>
@@ -260,7 +289,7 @@
 				  <br><br><br><br>
 				  <div class="container">
 				  		<image class="picSize" src="SoupABC.jpg"></image>
-				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Cart</button>
+				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Lunch Box</button>
 				  		<div class="description">
  							<p>ABC</p>
   						</div>
@@ -268,7 +297,7 @@
 
 				  <div class="container">
 				  		<image class="picSize" src="SoupChicken.jpg"></image>
-				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Cart</button>
+				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Lunch Box</button>
 				  		<div class="description">
  							<p>Chicken Soup</p>
   						</div>
@@ -276,14 +305,13 @@
 
 				  <div class="container">
 				  		<image class="picSize" src="SoupMushroom.jpg"></image>
-				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Cart</button>
+				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Lunch Box</button>
 				  		<div class="description">
  							<p>Mushroom Soup</p>
   						</div>
 				  </div>
 
 			</div>
-
 
 			<script>
 					function openMenu(evt, menuName) {
@@ -309,5 +337,83 @@
 				}
 			</script>
 
+			<script>
+				// Add active class to the current button (highlight it)
+				var header = document.getElementById("lunchbox");
+				var btns = header.getElementsByClassName("box");
+				for (var i = 0; i < btns.length; i++) {
+				  btns[i].addEventListener("click", function() {
+				  var current = document.getElementsByClassName("active");
+				  current[0].className = current[0].className.replace(" active", "");
+				  this.className += " active";
+				  });
+				}
+			</script>
+
+			<script>
+				// Get the modal
+				var modal1 = document.getElementById("box1");
+
+				var modal2 = document.getElementById("box2");
+
+				var modal3 = document.getElementById("box3");
+
+				// Get the button that opens the modal
+				var btn1 = document.getElementById("box1");
+
+				var btn2 = document.getElementById("box2");
+
+				var btn3 = document.getElementById("box3");
+
+				// Get the <span> element that closes the modal
+				var span = document.getElementsByClassName("close")[0];
+
+				// When the user clicks the button, open the modal 
+				btn1.onclick = function() {
+				  modal1.style.display = "block";
+				}
+
+				btn2.onclick = function() {
+				  modal2.style.display = "block";
+				}
+
+				btn3.onclick = function() {
+				  modal2.style.display = "block";
+				}
+
+
+				// When the user clicks on <span> (x), close the modal
+				span.onclick = function() {
+				  modal1.style.display = "none";
+				}
+
+				span.onclick = function() {
+				  modal2.style.display = "none";
+				}
+
+				span.onclick = function() {
+				  modal3.style.display = "none";
+				}
+
+				// When the user clicks anywhere outside of the modal, close it
+				window.onclick = function(event) {
+				  if (event.target == modal1) {
+				    modal1.style.display = "none";
+				  }
+				}
+
+				window.onclick = function(event) {
+				  if (event.target == modal2) {
+				    modal2.style.display = "none";
+				  }
+				}
+
+				window.onclick = function(event) {
+				  if (event.target == modal2) {
+				    modal2.style.display = "none";
+				  }
+				}
+
+			</script>
 </body>
 </html>

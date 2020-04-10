@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset = "utf-8">
+	<title>Cart</title>
+	<meta name = "viewport" content = "width=device-width, initial scale = 1.0">
+	<link rel = "stylesheet" href = "design.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	
+	<header>	
+		<nav>
+			<image class = "logo" height = 80 src= "logo.png"></image>
+			<ul>
+				<li><a href="#" class="headerbutton">&ensp;About&ensp;</a></li>
+				<li><a href="#" class="headerbutton">&ensp;Menu&ensp;</a></li>
+				<li><a href="#" class="headerbutton">&ensp;Location&ensp;</a></li>
+				<li><a href="#" class="headercart"><image height = "30" src = "cart.png"></image></a></li>
+				<li class="dropdown"><a href="#" class="headerprofile"><image height ="40" src = "ppic.png"></image></a>
+					<div class="dropdown-content">
+						<a href="#">Profile</a>
+						<a href="#">Setting</a>
+						<a href="#">Log Out</a>
+					</div></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="tabcontent">
+		<br><br><br><br>
+		<h3>Cart&emsp;#Example#</h3>
+		<div class = "cartNumber">
+			<div class ="cartList">
+				<div class="deletecart">
+						<span class="delete-btn"></span>
+				</div>
+				<div class="containerCart">
+					 <image class="cartSize" src="#"></image>
+				</div>
+					<p class="cartdescription">Lunch Box 1</p>
+					<p id ="total" class="price">RM XX.XX</p>
+			</div>
+				<div class="cartContentList">
+					<div class="deletecontent">
+						<span class="delete-btn"></span>
+					</div>
+					<div class="containerCartContent">
+						<image class="cartContentSize" src="#"></image>
+					</div>
+						<p class="moreDescription">[Dish Name 1]</p>
+					<div id="portionSize">
+  						<button class="portion">S</button>
+  						<button class="portion active">M</button>
+  						<button class="portion">L</button>
+					</div>
+						<p class="price">RM XX.XX</p>
+				</div>
+				<div class="cartContentList">
+					<div class="deletecontent">
+						<span class="delete-btn"></span>
+					</div>
+					<div class="containerCartContent">
+							<image class="cartContentSize" src="#"></image>
+					</div>
+						<p class="moreDescription">[Dish Name 2]</p>
+					<div id="portionSize">
+  						<button class="portion">S</button>
+  						<button class="portion active">M</button>
+  						<button class="portion">L</button>
+					</div>
+						<p class="price">RM XX.XX</p>
+				</div>
+				<div class="cartContentList">
+					<div class="deletecontent">
+						<span class="delete-btn"></span>
+					</div>
+					<div class="containerCartContent">
+							<image class="cartContentSize" src="#"></image>
+					</div>
+						<p class="moreDescription">[Dish Name 3]</p>
+					<div id="portionSize">
+  						<button class="portion">S</button>
+  						<button class="portion active">M</button>
+  						<button class="portion">L</button>
+					</div>
+						<p class="price">RM XX.XX</p>
+				</div>
+				<div class="cartContentList">
+					<div class="deletecontent">
+						<span class="delete-btn"></span>
+					</div>
+					<div class="containerCartContent">
+							<image class="cartContentSize" src="#"></image>
+					</div>
+						<p class="moreDescription">[Dish Name 4]</p>
+					<div id="portionSize">
+  						<button class="portion">S</button>
+  						<button class="portion active">M</button>
+  						<button class="portion">L</button>
+					</div>
+						<p class="price">RM XX.XX</p>
+				</div>
+		</div>
+		<div class = "cartNumber">
+			<div class ="cartList">
+				<div class="deletecart">
+						<span class="delete-btn"></span>
+					</div>
+				<div class="containerCart">
+				  		<image class="cartSize" src="#"></image>
+				</div>
+					<p class="cartdescription">Lunch Box 2</p>
+					<p id="total" class="price">RM XX.XX</p>
+			</div>	
+				<div class="cartContentList">
+					<div class="deletecontent">
+						<span class="delete-btn"></span>
+					</div>
+					<div class="containerCartContent">
+						<image class="cartContentSize" src="#"></image>
+					</div>
+						<p class="moreDescription">[Dish Name 1]</p>
+					<div id="portionSize">
+  						<button class="portion">S</button>
+  						<button class="portion active">M</button>
+  						<button class="portion">L</button>
+					</div>
+						<p class="price">RM XX.XX</p>
+				</div>
+				<div class="cartContentList">
+					<div class="deletecontent">
+						<span class="delete-btn"></span>
+					</div>
+					<div class="containerCartContent">
+							<image class="cartContentSize" src="#"></image>
+					</div>
+						<p class="moreDescription">[Dish Name 2]</p>
+					<div id="portionSize">
+  						<button class="portion">S</button>
+  						<button class="portion active">M</button>
+  						<button class="portion">L</button>
+					</div>
+						<p class="price">RM XX.XX</p>
+				</div>
+				<div class="cartContentList">
+					<div class="deletecontent">
+						<span class="delete-btn"></span>
+					</div>
+					<div class="containerCartContent">
+							<image class="cartContentSize" src="#"></image>
+					</div>
+						<p class="moreDescription">[Dish Name 3]</p>
+					<div id="portionSize">
+  						<button class="portion">S</button>
+  						<button class="portion active">M</button>
+  						<button class="portion">L</button>
+					</div>
+						<p class="price">RM XX.XX</p>
+				</div>
+		</div>	
+	</div>
+<script>
+	var header = document.getElementById("portionSize");
+	var btns = header.getElementsByClassName("portion");
+	for (var i = 0; i < btns.length; i++) {
+  	btns[i].addEventListener("click", function() {
+  	var current = document.getElementsByClassName("active");
+  	current[0].className = current[0].className.replace(" active", "");
+  	this.className += " active";
+  	});
+	}
+</script>
+
+<script>
+$(document).ready(function(){
+  $('.deletecontent').on('click', function(){
+    $(this).closest(".cartContentList").remove();
+});
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $('.deletecart').on('click', function(){
+    $(this).closest(".cartNumber").remove();
+});
+});
+</script>
+
+</body>
+</html>
