@@ -178,6 +178,17 @@ nav ul li{
 	font-size: 17px;
 }
 
+#morefood{
+	margin-top: 7px;
+	padding: 8px 24px;
+}
+
+#lessfood{
+	padding: 8px 24px;
+	background-color: #333;
+  	color: #f1f1f1;
+}
+
 #checkoutbtn{
 	margin-top: 20px;
 	background-color:#FFC766;
@@ -328,8 +339,13 @@ div.description {
   background-color: rgba(0,0,0,0.4);
 }
 
+#box1{
+	display: block;
+}
+
 /* Modal Content */
 .modal-content {
+  text-transform: uppercase;
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
@@ -338,15 +354,14 @@ div.description {
 }
 
 /* The Close Button */
-.close {
+.close1,.close2,.close3 {
   color: #aaaaaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.close1:hover,.close1:focus,.close2:hover,.close2:focus,.close3:hover,.close3:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
