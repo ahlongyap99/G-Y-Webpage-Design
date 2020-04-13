@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset = "utf-8">
+	<title>G&Y Checkout</title>
+	<meta name = "viewport" content = "width=device-width, initial scale = 1.0">
+	<link rel = "stylesheet" href = "design.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	<header>	
+		<nav>
+			<image class = "logo" height = 80 src= "logo.png"></image>
+			<ul>
+				<li><a href="#" class="headerbutton">&ensp;About&ensp;</a></li>
+				<li><a href="#" class="headerbutton">&ensp;Menu&ensp;</a></li>
+				<li><a href="#" class="headerbutton">&ensp;Location&ensp;</a></li>
+				<li><a href="#" class="headercart"><image height = "30" src = "cart.png"></image></a></li>
+				<li class="dropdown"><a href="#" class="headerprofile"><image height ="40" src = "ppic.png"></image></a>
+					<div class="dropdown-content">
+						<a href="#">Profile</a>
+						<a href="#">Setting</a>
+						<a href="#">Log Out</a>
+					</div></li>
+			</ul>
+		</nav>
+		</header>
+
+		<div class="tabcontent">
+			<br><br><br><br>
+			<h3>Checkout</h3>
+			
+			<div class="checkoutInfo">
+				<div class="userIdentity">
+					<h4>Delivery Address</h4>
+					<br>
+					<label for="fname">Full Name</label>
+		            <input type="text" id="fname" placeholder="John M. Doe">
+		            <label for="phone"> Phone</label>
+		            <input type="text" id="phone" placeholder="01X-XXXXXXXX">
+		            <label for="email">Email</label>
+		            <input type="text" id="email" placeholder="john@example.com">
+		            <label for="address">Address</label>
+		            <input type="text" id="adr" placeholder="No.XX, Jalan Sungai Petani">
+		            <input type="text" id="adr">
+		            <input type="text" id="adr">
+		            <label for="city">Postal Code</label>
+		            <input type="text" id="postal" placeholder="63000">
+		            <label for="city">City</label>
+		            <input type="text" id="city" placeholder="Puchong">
+		            <label for="state">State</label>
+		            <input type="text" id="state" placeholder="Selangor">
+				</div>
+				
+				<div class ="summaryCart">
+					<h4>Cart</h4>
+					<div class="summaryDescription">
+						<p class="cartcheckOut">Lunch Box 1</p>
+						<p class="summaryPrice">RMXX.XX</p>
+					</div>
+
+					<div class="summaryDescription">
+						<p class="cartcheckOut">Combo Meal</p>
+						<p class="summaryPrice">RMXX.XX</p>
+					</div>
+
+					<div class="summaryDescription">
+						<p class="cartcheckOut">Lunch Box 2</p>
+						<p class="summaryPrice">RMXX.XX</p>
+					</div>
+
+					<div class="summaryDescription" id="TotalPriceCart">
+						<p class="cartcheckOut">Total:</p>
+						<p class="summaryPrice">RMXX.XX</p>
+					</div>
+
+				</div>
+			</div>
+			<h3>Payment Method</h3>
+		</div>
+			
+				<div class="PayingOption">
+				  <button class="paymentTab" onclick="openOption(event, 'card')" id="defaultOpen">Debit/Credit Card</button>
+				  <button class="paymentTab" onclick="openOption(event, 'e-wallet')">E-wallet</button>
+				  <button class="paymentTab" onclick="openOption(event, 'cash')">Cash on Delivery</button>
+				</div>
+
+				<div id="card" class="PaymentContent">
+				  <h4>Credit/Debit Card</h4>
+				  <div class="userIdentity">
+				  	<br>
+				  	<label for="fname">Accepted Cards</label>
+				  	<div class="icon-container">
+		              <i class="fa fa-cc-visa" style="color:navy;"></i>
+		              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+            		</div>	
+					<label for="fname">Name on Card</label>
+		            <input type="text" id="fname" placeholder="John M. Doe">
+		            <label for="cardNumber"> Credit card Number</label>
+		            <input type="text" id="cardNumber"  placeholder="XXXX-XXXX-XXXX-XXXX">
+		            <label for="exp">Exp Month</label>
+		            <input type="text" id="exp" placeholder="July">
+		            
+		            	<div id="yearNcvv">
+			            	<label for="year">Exp Year</label>
+				            <label for="cvv">CVV</label>
+				            <input type="text" id="year" placeholder="20XX">
+				            <input type="text" id="cvv" placeholder="XXX">
+						</div>
+					</div>
+					<br><br>
+				</div>
+
+
+				<div id="e-wallet" class="PaymentContent">
+					<h4>E-wallet</h4>
+				 	<label class="radioContainer">
+				 		<image class="ewalletType" src="https://www.thesundaily.my/binrepository/432x432/0c0/0d0/none/11808/CFVO/logo_857716_20191223175700.jpg" alt="Touch 'n Go eWallet"></image>
+						<input type="radio" checked="checked" name="radio">
+						<span class="checkmark"></span>
+					</label>
+					<label class="radioContainer">
+						<image class="ewalletType" src="https://vectorise.net/logo/wp-content/uploads/2019/11/Logo-Boost-e-Wallet-app.png" alt="Boost"></image>
+						<input type="radio" name="radio">
+						<span class="checkmark"></span>
+					</label>
+					<label class="radioContainer">
+						<image class="ewalletType" src="https://lh3.googleusercontent.com/olW3RiXYlTljNtGT-_oFKsMZSNtPM-Cjs0uhXAEfBv3RN4-iDnyNd-8QDZda2vTkfdk" alt="FavePay"></image>
+						<input type="radio" name="radio">
+						<span class="checkmark"></span>
+					</label>
+					<label class="radioContainer">
+						<image class="ewalletType" src="https://cdn.clipart.email/a29920fe1cf19d75179d6731b6b066e5_grabpay-card-reviews-and-comparison-seedly_300-300.png" alt="GrabPay"></image>
+						<input type="radio" name="radio">
+						<span class="checkmark"></span>
+					</label>
+					<div class="caution">
+					  	<p>Please take note of the following before you proceed:</p>
+					  	<br>
+						<p>1) Ensure you have sufficient balance in your E-wallet account to cover the total cost of this order.</p>
+						<br>
+						<p>2) Maximum amount per transaction is capped at RMX,XXX.</p>
+					</div>
+					<br>
+				</div>
+
+				<div id="cash" class="PaymentContent">
+				  <h4>Cash on Delivery</h4>
+				  <br>
+				  <p style="text-align: left;">Pay with cash upon delivery</p> 
+				  <br>
+				</div>
+
+				<button id="placeOrder" class="checkOut">Place Order</button>
+
+		
+	<script>
+			function openOption(evt, method) {
+			  var i, paymentContent, paymentTab;
+			  paymentContent = document.getElementsByClassName("PaymentContent");
+			  for (i = 0; i < paymentContent.length; i++) {
+			    paymentContent[i].style.display = "none";
+			  }
+			  paymentTab = document.getElementsByClassName("paymentTab");
+			  for (i = 0; i < paymentTab.length; i++) {
+			    paymentTab[i].className = paymentTab[i].className.replace(" active", "");
+			  }
+			  document.getElementById(method).style.display = "block";
+			  evt.currentTarget.className += " active";
+			}
+
+			document.getElementById("defaultOpen").click();
+	</script>
+
+</body>
+
+</html>
